@@ -29,3 +29,24 @@ body {
 .columns {
   /* border: 2px solid pink; */
 }
+
+.heart-svg {
+  background-color: transparent;
+  width: 75px;
+  height: 75px;
+}
+
+.timer-wrapper {
+  span {
+    color: #cc242c;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+  }
+}
