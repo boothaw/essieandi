@@ -40,19 +40,17 @@ h1 {
   height: 75px;
 }
 
-.timer-wrapper {
-  span {
-    color: #cc242c;
-  }
+.timer-wrapper span {
+  color: #cc242c;
+}
 
-  .label {
-    font-size: 1rem;
-  }
+.timer-wrapper .label {
+  font-size: 1rem;
+}
 
-  .divider {
-    display: flex;
-    align-items: center;
-  }
+.timer-wrapper .divider {
+  display: flex;
+  align-items: center;
 }
 
 .section-ctn {

@@ -42,9 +42,6 @@ const Home = () => {
       const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       setMinutes(m);
 
-      const s = Math.floor((difference % (1000 * 60)) / 1000);
-      setSeconds(s);
-
       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
         setPartyTime(true);
       }
