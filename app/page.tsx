@@ -23,47 +23,46 @@ const Home = () => {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
 
-  useEffect(() => {
-    const target = new Date("04/28/2024 12:00:00");
+  //   useEffect(() => {
+  //     const target = new Date("04/28/2024 12:00:00");
 
-    const interval = setInterval(() => {
-      const now = new Date();
-      const difference = target.getTime() - now.getTime();
+  //     const interval = setInterval(() => {
+  //       const now = new Date();
+  //       const difference = target.getTime() - now.getTime();
 
-      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-      setDays(d);
+  //       const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+  //       setDays(d);
 
-      const h = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      setHours(h);
+  //       const h = Math.floor(
+  //         (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  //       );
+  //       setHours(h);
 
-      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      setMinutes(m);
+  //       const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  //       setMinutes(m);
 
-      const s = Math.floor((difference % (1000 * 60)) / 1000);
-      setSeconds(s);
+  //       const s = Math.floor((difference % (1000 * 60)) / 1000);
+  //       setSeconds(s);
 
-      if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
-        setPartyTime(true);
-      }
-    }, 1000);
+  //       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
+  //         setPartyTime(true);
+  //       }
+  //     }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //     return () => clearInterval(interval);
+  //   }, []);
 
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between'>
-      <div className='z-10 flex w-full items-center justify-between font-mono text-sm lg:flex overflow-hidden'>
+    <main className='flex min-h-screen flex-col items-center section-ctn'>
+      <div className='nav z-10 flex w-full items-center font-mono text-sm lg:flex overflow-hidden justify-between'>
         <div className='-rotate-12 w-fit'>
           <HeartIcon />
         </div>
         <div>
           {partyTime ? (
             <>
-              <h1>Happy new year!</h1>
+              <h1>We did it. I love you.</h1>
             </>
           ) : (
             <>
@@ -131,74 +130,27 @@ const Home = () => {
         {/* </div> */}
       </div>
 
-      <div className='columns mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:text-left flex-col flex justify-center'>
-        <a
-          href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-          className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-        <a
-          href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-          className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-        <a
+      <div className='flex-col flex justify-center'>
+        <section className='py-12 section'>
+          {/* <iframe
+            src='https://open.spotify.com/embed/playlist/3RNRShwfeZo5pqKgIq9iGA?utm_source=generator'
+            width='100%'
+            height='352'
+            allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+            loading='lazy'
+          ></iframe> */}
+          <div className='w-28 h-64 bg-red-600'></div>
+        </section>
+        <section className='py-12 section'>
+          <div className='w-28 h-64 bg-red-600'></div>
+        </section>
+        <section className='py-12 section'>
+          <div className='w-28 h-64 bg-red-600'></div>
+        </section>
+        <section className='py-12 section'>
+          <div className='w-28 h-64 bg-red-600'></div>
+        </section>
+        {/* <a
           href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
           className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
           target='_blank'
@@ -264,7 +216,7 @@ const Home = () => {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
-        </a>
+        </a> */}
       </div>
     </main>
   );

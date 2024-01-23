@@ -26,6 +26,10 @@ body {
   }
 }
 
+h1 {
+  color: #cc242c;
+}
+
 .columns {
   /* border: 2px solid pink; */
 }
@@ -49,4 +53,23 @@ body {
     display: flex;
     align-items: center;
   }
+}
+
+.section-ctn {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+.section {
+  scroll-snap-align: start;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  z-index: 222;
+  position: fixed;
+  background: #fff;
 }
