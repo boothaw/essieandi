@@ -24,34 +24,34 @@ const Home = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
 
-  //   useEffect(() => {
-  //     const target = new Date("04/28/2024 12:00:00");
+  useEffect(() => {
+    const target = new Date("04/28/2024 12:00:00");
 
-  //     const interval = setInterval(() => {
-  //       const now = new Date();
-  //       const difference = target.getTime() - now.getTime();
+    const interval = setInterval(() => {
+      const now = new Date();
+      const difference = target.getTime() - now.getTime();
 
-  //       const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-  //       setDays(d);
+      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+      setDays(d);
 
-  //       const h = Math.floor(
-  //         (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  //       );
-  //       setHours(h);
+      const h = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      setHours(h);
 
-  //       const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  //       setMinutes(m);
+      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      setMinutes(m);
 
-  //       const s = Math.floor((difference % (1000 * 60)) / 1000);
-  //       setSeconds(s);
+      const s = Math.floor((difference % (1000 * 60)) / 1000);
+      setSeconds(s);
 
-  //       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
-  //         setPartyTime(true);
-  //       }
-  //     }, 1000);
+      if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
+        setPartyTime(true);
+      }
+    }, 1000);
 
-  //     return () => clearInterval(interval);
-  //   }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <main className='flex min-h-screen flex-col items-center section-ctn'>
