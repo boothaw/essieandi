@@ -63,14 +63,16 @@ h1 {
   display: flex;
   height: 100vh;
   justify-content: center;
+  align-items: flex-start;
 }
 
-.nav {
+.nav.section {
   z-index: 222;
   background: #fff;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  height: 100vh;
+  height: fit-content;
+  justify-content: space-between;
 }
 
 body,

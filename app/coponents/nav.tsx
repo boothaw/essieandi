@@ -46,7 +46,7 @@ const NavCounter = () => {
     </svg>
   );
   return (
-    <div className='nav z-10 flex w-full items-center font-mono text-sm lg:flex overflow-hidden justify-between'>
+    <div className='w-screen section nav z-10 flex w-full items-center font-mono text-sm lg:flex overflow-hidden justify-between'>
       <div className='-rotate-12 w-fit'>
         <HeartIcon />
       </div>

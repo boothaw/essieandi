@@ -7,9 +7,11 @@ import NavCounter from "./coponents/nav";
 const Home = () => {
   return (
     <main className='flex min-h-screen flex-col items-center section-ctn'>
-      <NavCounter></NavCounter>
-      <div className='flex-col flex justify-center max-w-lg w-11/12'>
-        <section className='py-12 section flex flex-col'>
+      <div className='flex-col flex justify-center items-center'>
+        {/* <section className='section w-screen'> */}
+        <NavCounter></NavCounter>
+        {/* </section> */}
+        <section className='py-12 section flex flex-col max-w-lg w-11/12'>
           <h2 className='text-left'>our tunes</h2>
           <iframe
             src='https://open.spotify.com/embed/playlist/3RNRShwfeZo5pqKgIq9iGA?utm_source=generator'
@@ -19,13 +21,13 @@ const Home = () => {
             loading='lazy'
           ></iframe>
         </section>
-        <section className='py-12 section'>
+        <section className='py-12 section max-w-lg w-11/12'>
           <div className='w-28 h-64 bg-red-600'></div>
         </section>
-        <section className='py-12 section'>
+        <section className='py-12 section max-w-lg w-11/12'>
           <div className='w-28 h-64 bg-red-600'></div>
         </section>
-        <section className='py-12 section'>
+        <section className='py-12 section max-w-lg w-11/12'>
           <div className='w-28 h-64 bg-red-600'></div>
         </section>
         {/* <a
