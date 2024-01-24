@@ -11,8 +11,11 @@ const Reveal = ({ children, duration, x, y }) => {
 
   const threshold = 1;
 
+  const clean = ref.current;
+
   useEffect(() => {
-    if (ref.current) {
+    const cleanup = ref.current;
+    if (cleanup) {
       const intersectionObserver = new IntersectionObserver(
         (entries) => {
           if (entries[0].isIntersecting) {
@@ -26,15 +29,15 @@ const Reveal = ({ children, duration, x, y }) => {
         }
       );
 
-      intersectionObserver.observe(ref.current);
+      intersectionObserver.observe(cleanup);
 
       return () => {
-        if (ref.current) {
-          intersectionObserver.unobserve(ref.current);
+        if (cleanup) {
+          intersectionObserver.unobserve(cleanup);
         }
       };
     }
-  }, [intersecting, setIntersecting]);
+  }, [clean]);
 
   return (
     <div
