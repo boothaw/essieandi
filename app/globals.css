@@ -63,11 +63,21 @@ h1 {
   display: flex;
   height: 100vh;
   justify-content: center;
-  align-items: center;
 }
 
 .nav {
   z-index: 222;
-  position: fixed;
   background: #fff;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
 }
