@@ -30,7 +30,7 @@ const Reveal = ({ children, threshold, duration, x, y }) => {
         }
       };
     }
-  }, []);
+  }, [ref.current]);
 
   return (
     <div
