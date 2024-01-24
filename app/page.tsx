@@ -1,17 +1,18 @@
-"use client";
 import Image from "next/image";
-
-import NavCounter from "./coponents/nav";
+import Reveal from "./components/reveal";
+import NavCounter from "./components/nav";
 // import HeartIcon from "./assets/heart.svg";
 
 const Home = () => {
   return (
     <main className='flex min-h-screen flex-col items-center section-ctn'>
       <div className='flex-col flex justify-center items-center'>
-        {/* <section className='section w-screen'> */}
         <NavCounter></NavCounter>
-        {/* </section> */}
-        <section className='py-12 section flex flex-col max-w-lg w-11/12'>
+        {/* <section className='py-3 w-full section max-w-lg w-11/12'>
+          <h2>scroll for more height calc minus nav</h2>
+        </section> */}
+        {/* <Reveal duration='200ms' threshold={1} x={undefined} y={undefined}> */}
+        <section className='py-3 w-full section flex flex-col max-w-lg w-11/12'>
           <h2 className='text-left'>our tunes</h2>
           <iframe
             src='https://open.spotify.com/embed/playlist/3RNRShwfeZo5pqKgIq9iGA?utm_source=generator'
@@ -21,13 +22,60 @@ const Home = () => {
             loading='lazy'
           ></iframe>
         </section>
-        <section className='py-12 section max-w-lg w-11/12'>
+        {/* </Reveal> */}
+        <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <h2>to be honest, we've already said it best</h2>
+          </section>
+        </Reveal>
+        <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <div className='imessage'>
+              <p className='from-them'>
+                don't tempt me, I'll take up all your free time
+              </p>
+              <p className='from-me'>I double dog dare ya</p>
+            </div>
+          </section>
+        </Reveal>
+        <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <p className='text-center'> You broke your fucking promise </p>
+          </section>
+        </Reveal>
+        <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <p className='text-center'>I feel like we were inevitable</p>
+          </section>
+        </Reveal>
+        <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <div className='imessage'>
+              <p className='from-them'>
+                you're the only person I could imagine doing this with
+              </p>
+            </div>
+          </section>
+        </Reveal>
+        <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <div className='w-28 h-64 bg-red-600'></div>
+          </section>
+        </Reveal>
+        <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <div className='w-28 h-64 bg-red-600'></div>
+          </section>
+        </Reveal>
+        <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <div className='w-28 h-64 bg-red-600'></div>
+          </section>
+        </Reveal>
+        <section className='py-3 w-full section max-w-lg w-11/12'>
           <div className='w-28 h-64 bg-red-600'></div>
         </section>
-        <section className='py-12 section max-w-lg w-11/12'>
-          <div className='w-28 h-64 bg-red-600'></div>
-        </section>
-        <section className='py-12 section max-w-lg w-11/12'>
+        <section className='py-3 w-full section max-w-lg w-11/12'>
           <div className='w-28 h-64 bg-red-600'></div>
         </section>
         {/* <a
