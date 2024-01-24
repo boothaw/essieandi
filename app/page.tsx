@@ -25,14 +25,14 @@ const Home = () => {
         {/* </Reveal> */}
         <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
-            <h2>to be honest, we've already said it best</h2>
+            <h2>to be honest, we&apos;ve already said it best</h2>
           </section>
         </Reveal>
         <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <div className='imessage'>
               <p className='from-them'>
-                don't tempt me, I'll take up all your free time
+                don&apos;t tempt me, I'll take up all your free time
               </p>
               <p className='from-me'>I double dog dare ya</p>
             </div>
@@ -40,7 +40,9 @@ const Home = () => {
         </Reveal>
         <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
-            <p className='text-center'> You broke your fucking promise </p>
+            <p className='text-center'>
+              &rsquo;You broke your fucking promise&rsquo;
+            </p>
           </section>
         </Reveal>
         <Reveal duration='50ms' threshold={1} x={undefined} y={undefined}>
