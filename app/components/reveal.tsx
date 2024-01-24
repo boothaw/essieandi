@@ -6,6 +6,7 @@ const Reveal = ({ children, threshold, duration, x, y }) => {
   y = y || 0;
   const ref = useRef(null);
   const [intersecting, setIntersecting] = useState(false);
+  const current = ref.current;
 
   useEffect(() => {
     if (ref.current) {
@@ -26,11 +27,11 @@ const Reveal = ({ children, threshold, duration, x, y }) => {
 
       return () => {
         if (ref.current) {
-          intersectionObserver.unobserve(ref.current);
+          intersectionObserver.unobserve(current);
         }
       };
     }
-  }, [ref.current]);
+  }, [current]);
 
   return (
     <div
