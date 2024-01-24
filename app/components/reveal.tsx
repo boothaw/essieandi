@@ -1,11 +1,15 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-const Reveal = ({ children, threshold, duration, x, y }) => {
+const Reveal = ({ children, duration, x, y }) => {
   x = x || 0;
   y = y || 0;
   const ref = useRef(null);
   const [intersecting, setIntersecting] = useState(false);
+
+  console.log(intersecting);
+
+  const threshold = 1;
 
   useEffect(() => {
     if (ref.current) {
@@ -30,7 +34,7 @@ const Reveal = ({ children, threshold, duration, x, y }) => {
         }
       };
     }
-  }, [intersecting]);
+  }, [intersecting, setIntersecting]);
 
   return (
     <div
