@@ -1,7 +1,16 @@
 "use client";
 
+import { ReactNode } from "react";
+import { LayoutProps } from "@/.next/types/app/layout";
 import React, { useEffect, useRef, useState } from "react";
-const Reveal = ({ children, duration, x, y }) => {
+
+const LayoutProps = {
+	children: Element,
+	x: number,
+	y: number
+  }
+
+const Reveal = ({ children, x, y } : LayoutProps) => {
   x = x || 0;
   y = y || 0;
   const ref = useRef(null);
@@ -42,7 +51,7 @@ const Reveal = ({ children, duration, x, y }) => {
   return (
     <div
       style={{
-        transitionDuration: duration,
+        transitionDuration: 50ms,
         transform: !intersecting
           ? `translate(${x}px, ${y}px)`
           : "translate(0px, 0px)",
