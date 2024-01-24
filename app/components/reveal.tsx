@@ -30,7 +30,7 @@ const Reveal = ({ children, threshold, duration, x, y }) => {
         }
       };
     }
-  }, [ref, intersecting]);
+  }, [intersecting]);
 
   return (
     <div
