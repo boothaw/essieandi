@@ -4,13 +4,14 @@ import { ReactNode } from "react";
 import { LayoutProps } from "@/.next/types/app/layout";
 import React, { useEffect, useRef, useState } from "react";
 
-const LayoutProps = {
-	children: Element,
-	x: number,
-	y: number
-  }
+interface Props {
+  children?: ReactNode;
+  x: any;
+  y: any;
+  // any props that come into the component
+}
 
-const Reveal = ({ children, x, y } : LayoutProps) => {
+const Reveal = ({ children, x, y }: Props) => {
   x = x || 0;
   y = y || 0;
   const ref = useRef(null);
@@ -51,7 +52,7 @@ const Reveal = ({ children, x, y } : LayoutProps) => {
   return (
     <div
       style={{
-        transitionDuration: 50ms,
+        // transitionDuration: 50,
         transform: !intersecting
           ? `translate(${x}px, ${y}px)`
           : "translate(0px, 0px)",
