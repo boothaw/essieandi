@@ -17,7 +17,8 @@ const Reveal = ({ children }: Props) => {
 
   const threshold = 1;
   const duration = 50;
-  //   make x and y
+  const x = 0;
+  const y = 0;
 
   const clean = ref.current;
 
