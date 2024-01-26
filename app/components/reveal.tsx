@@ -53,7 +53,7 @@ const Reveal = ({ children, x, y }: Props) => {
   return (
     <div
       style={{
-        transitionDuration: duration,
+        // transitionDuration: duration,
         transform: !intersecting
           ? `translate(${x}px, ${y}px)`
           : "translate(0px, 0px)",
