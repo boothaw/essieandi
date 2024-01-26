@@ -6,8 +6,6 @@ import React, { useEffect, useRef, useState } from "react";
 
 interface Props {
   children?: ReactNode;
-  x: number;
-  y: number;
   // any props that come into the component
 }
 
