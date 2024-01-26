@@ -9,9 +9,7 @@ interface Props {
   // any props that come into the component
 }
 
-const Reveal = ({ children, x, y }: Props) => {
-  x = x || 0;
-  y = y || 0;
+const Reveal = ({ children }: Props) => {
   const ref = useRef(null);
   const [intersecting, setIntersecting] = useState(false);
 
