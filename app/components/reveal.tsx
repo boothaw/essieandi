@@ -6,8 +6,8 @@ import React, { useEffect, useRef, useState } from "react";
 
 interface Props {
   children?: ReactNode;
-  x: any;
-  y: any;
+  x: number;
+  y: number;
   // any props that come into the component
 }
 
@@ -20,6 +20,7 @@ const Reveal = ({ children, x, y }: Props) => {
   console.log(intersecting);
 
   const threshold = 1;
+  const duration = 50;
 
   const clean = ref.current;
 
@@ -52,7 +53,7 @@ const Reveal = ({ children, x, y }: Props) => {
   return (
     <div
       style={{
-        // transitionDuration: 50,
+        transitionDuration: duration,
         transform: !intersecting
           ? `translate(${x}px, ${y}px)`
           : "translate(0px, 0px)",

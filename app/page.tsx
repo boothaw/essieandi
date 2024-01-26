@@ -23,12 +23,12 @@ const Home = () => {
           ></iframe>
         </section>
         {/* </Reveal> */}
-        <Reveal duration='50ms' x={undefined} y={undefined}>
+        <Reveal x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <h2>to be honest, we;ve already said it best</h2>
           </section>
         </Reveal>
-        <Reveal duration='50ms' x={undefined} y={undefined}>
+        <Reveal x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <div className='imessage'>
               <p className='from-them'>
@@ -38,17 +38,17 @@ const Home = () => {
             </div>
           </section>
         </Reveal>
-        <Reveal duration='50ms' x={undefined} y={undefined}>
+        <Reveal x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <p className='text-center'>;You broke your fucking promise;</p>
           </section>
         </Reveal>
-        <Reveal duration='50ms' x={undefined} y={undefined}>
+        <Reveal x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <p className='text-center'>I feel like we were inevitable</p>
           </section>
         </Reveal>
-        <Reveal duration='50ms' x={undefined} y={undefined}>
+        <Reveal x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <div className='imessage'>
               <p className='from-them'>
@@ -57,17 +57,17 @@ const Home = () => {
             </div>
           </section>
         </Reveal>
-        <Reveal duration='50ms' x={undefined} y={undefined}>
+        <Reveal x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <div className='w-28 h-64 bg-red-600'></div>
           </section>
         </Reveal>
-        <Reveal duration='50ms' x={undefined} y={undefined}>
+        <Reveal x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <div className='w-28 h-64 bg-red-600'></div>
           </section>
         </Reveal>
-        <Reveal duration='50ms' x={undefined} y={undefined}>
+        <Reveal x={undefined} y={undefined}>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <div className='w-28 h-64 bg-red-600'></div>
           </section>
