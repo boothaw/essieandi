@@ -11,18 +11,16 @@ const Home = () => {
         {/* <section className='py-3 w-full section max-w-lg w-11/12'>
           <h2>scroll for more height calc minus nav</h2>
         </section> */}
-        {/* <Reveal duration='200ms' threshold={1} x={undefined} y={undefined}> */}
-        <section className='py-3 w-full section flex flex-col max-w-lg w-11/12'>
+        <section className='py-3 w-full section max-w-lg w-11/12 flex-col'>
           <h2 className='text-left'>our tunes</h2>
           <iframe
             src='https://open.spotify.com/embed/playlist/3RNRShwfeZo5pqKgIq9iGA?utm_source=generator'
-            width='100%'
+            width='90%'
             height='352'
             allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
             loading='lazy'
           ></iframe>
         </section>
-        {/* </Reveal> */}
         <Reveal>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <h2>to be honest, we;ve already said it best</h2>
