@@ -58,7 +58,7 @@ const Reveal = ({ children }: Props) => {
       }}
       className={`transition ${
         intersecting ? "opacity-100" : "opacity-10"
-      } reveal`}
+      } reveal w-full flex justify-center`}
       //   add classname with transition property in it above ^
       ref={ref}
     >

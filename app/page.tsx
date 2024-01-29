@@ -5,32 +5,40 @@ import NavCounter from "./components/nav";
 
 const Home = () => {
   return (
-    <main className='flex min-h-screen flex-col items-center section-ctn'>
+    <main className='flex min-h-screen flex-col items-center section-ctn font-sans'>
       <div className='flex-col flex justify-center items-center'>
         <NavCounter></NavCounter>
-        {/* <section className='py-3 w-full section max-w-lg w-11/12'>
-          <h2>scroll for more height calc minus nav</h2>
-        </section> */}
-        <section className='py-3 w-full section max-w-lg w-11/12 flex-col'>
+        {/* <Reveal> */}
+        <section className='py-3 w-11/12 section max-w-lg w-11/12'>
+          <p className='text-xl'>
+            In keeping with theme of packing light, here's your valentiens card
+            - OR - a collection of love made by us.
+          </p>
+        </section>
+        {/* </Reveal> */}
+        <Reveal></Reveal>
+        <section className='py-3 w-full section max-w-lg w-11/12 flex-col justify-start'>
           <h2 className='text-left'>our tunes</h2>
           <iframe
             src='https://open.spotify.com/embed/playlist/3RNRShwfeZo5pqKgIq9iGA?utm_source=generator'
             width='90%'
-            height='352'
+            height='400'
             allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
             loading='lazy'
           ></iframe>
         </section>
         <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12'>
-            <h2>to be honest, we;ve already said it best</h2>
+          <section className='py-3 section max-w-lg w-11/12'>
+            <h2 className='text-xls'>
+              to be honest, we've already said it best
+            </h2>
           </section>
         </Reveal>
         <Reveal>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <div className='imessage'>
               <p className='from-them'>
-                don;t tempt me, I'll take up all your free time
+                don't tempt me, I'll take up all your free time
               </p>
               <p className='from-me'>I double dog dare ya</p>
             </div>
@@ -38,7 +46,7 @@ const Home = () => {
         </Reveal>
         <Reveal>
           <section className='py-3 w-full section max-w-lg w-11/12'>
-            <p className='text-center'>;You broke your fucking promise;</p>
+            <p className='text-center'>''You broke your fucking promise''</p>
           </section>
         </Reveal>
         <Reveal>
