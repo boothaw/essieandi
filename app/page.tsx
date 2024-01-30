@@ -1,22 +1,35 @@
 import Image from "next/image";
 import Reveal from "./components/reveal";
 import NavCounter from "./components/nav";
-// import HeartIcon from "./assets/heart.svg";
+import HeartIcon from "./assets/heart.svg";
 
 const Home = () => {
   return (
     <main className='flex min-h-screen flex-col items-center section-ctn font-sans'>
       <div className='flex-col flex justify-center items-center'>
         <NavCounter></NavCounter>
-        {/* <Reveal> */}
         <section className='py-3 w-11/12 section max-w-lg w-11/12'>
           <p className='text-xl'>
             In keeping with theme of packing light, here's your valentiens card
             - OR - a collection of love made by us.
           </p>
         </section>
-        {/* </Reveal> */}
-        <Reveal></Reveal>
+        <Reveal>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <div className='py-3 flex flex-col max-w-lg w-11/12'>
+              <img
+                className='w-2/3 first-img'
+                src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/smebzxk02xl8wz9zrxzw'
+                alt='NES snow'
+              />
+              <img
+                className='w-2/3 self-end second-img'
+                src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/pewrtmau8cu8ucrrna3j'
+                alt='Essie in Red'
+              />
+            </div>
+          </section>
+        </Reveal>
         <section className='py-3 w-full section max-w-lg w-11/12 flex-col justify-start'>
           <h2 className='text-left'>our tunes</h2>
           <iframe
@@ -64,13 +77,18 @@ const Home = () => {
           </section>
         </Reveal>
         <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12'>
-            <div className='w-28 h-64 bg-red-600'></div>
-          </section>
+          <section className='py-3 w-full section max-w-lg w-11/12'></section>
         </Reveal>
         <Reveal>
           <section className='py-3 w-full section max-w-lg w-11/12'>
-            <div className='w-28 h-64 bg-red-600'></div>
+            {/* <img
+              src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/smebzxk02xl8wz9zrxzw'
+              alt='NES snow'
+            />
+            <img
+              src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/pewrtmau8cu8ucrrna3j'
+              alt='Essie in Red'
+            /> */}
           </section>
         </Reveal>
         <Reveal>

@@ -97,8 +97,8 @@ html {
 }
 
 body {
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: normal;
   margin: 0;
 }
@@ -227,4 +227,13 @@ p[class^="from-"].emoji::before {
   .imessage p {
     margin: 0.5rem 0;
   }
+}
+
+.first-img {
+  margin-bottom: -20px;
+}
+
+.second-img {
+  margin-top: -20px;
+  z-index: 2;
 }
