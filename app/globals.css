@@ -231,9 +231,25 @@ p[class^="from-"].emoji::before {
 
 .first-img {
   margin-bottom: -20px;
+  height: auto !important;
+  position: relative !important;
+  max-width: 275px !important;
 }
 
 .second-img {
   margin-top: -20px;
   z-index: 2;
+  height: auto !important;
+  position: relative !important;
+  max-width: 275px !important;
+}
+
+.third-img {
+  height: auto !important;
+  position: relative !important;
+}
+
+.fourth-img {
+  height: auto !important;
+  position: relative !important;
 }

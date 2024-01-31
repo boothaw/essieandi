@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Reveal from "./components/reveal";
 import NavCounter from "./components/nav";
-import HeartIcon from "./assets/heart.svg";
+import HeartIcon from "./components/heart";
 
 const Home = () => {
   return (
@@ -16,17 +16,55 @@ const Home = () => {
         </section>
         <Reveal>
           <section className='py-3 w-full section max-w-lg w-11/12'>
-            <div className='py-3 flex flex-col max-w-lg w-11/12'>
-              <img
-                className='w-2/3 first-img'
+            <div className='py-3 flex flex-col max-w-lg w-11/12 relative items-center content-center justify-center'>
+              <Image
+                className='third-img rounded-lg'
+                src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/lwriysdpis4qdb12hhvq'
+                alt='NES snow'
+                fill={true}
+              />
+              <div className='absolute top-1.5 -right-0.5 rotate-12'>
+                <HeartIcon></HeartIcon>
+              </div>
+            </div>
+          </section>
+        </Reveal>
+        <Reveal>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <div className='py-3 flex flex-col max-w-lg w-11/12 relative'>
+              <Image
+                className='w-2/3 first-img rounded-lg'
                 src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/smebzxk02xl8wz9zrxzw'
                 alt='NES snow'
+                fill={true}
               />
-              <img
-                className='w-2/3 self-end second-img'
+              <div className='absolute -right-0 rotate-12'>
+                <HeartIcon></HeartIcon>
+              </div>
+              <Image
+                className='w-2/3 self-end second-img rounded-lg'
                 src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/pewrtmau8cu8ucrrna3j'
-                alt='Essie in Red'
+                alt='Red Essie'
+                fill={true}
               />
+              <div className='absolute -left-0 -bottom-0 -rotate-12'>
+                <HeartIcon></HeartIcon>
+              </div>
+            </div>
+          </section>
+        </Reveal>
+        <Reveal>
+          <section className='py-3 w-full section max-w-lg w-11/12'>
+            <div className='py-3 flex flex-col max-w-lg w-11/12 relative items-center content-center justify-center'>
+              <Image
+                className='fourth-img rounded-lg'
+                src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/cuw1bzqr8v6jz1cdyei4'
+                alt='NES snow'
+                fill={true}
+              />
+              <div className='absolute top-3 -right-0.5 rotate-12'>
+                <HeartIcon></HeartIcon>
+              </div>
             </div>
           </section>
         </Reveal>
