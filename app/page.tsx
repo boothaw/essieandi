@@ -22,7 +22,7 @@ const Home = () => {
             title='Spotify Playlist'
             src='https://open.spotify.com/embed/playlist/3RNRShwfeZo5pqKgIq9iGA?utm_source=generator'
             width='90%'
-            height='400'
+            height='400px'
             allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
             loading='lazy'
           ></iframe>
@@ -62,9 +62,6 @@ const Home = () => {
               </p>
             </div>
           </section>
-        </Reveal>
-        <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12'></section>
         </Reveal>
         <section className='py-3 w-full section max-w-lg w-11/12'>
           <div className='py-3 flex flex-col max-w-lg w-11/12 relative items-center content-center justify-center'>

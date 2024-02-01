@@ -30,13 +30,6 @@ h1 {
   color: #cc242c;
 }
 
-h2 {
-}
-
-.columns {
-  /* border: 2px solid pink; */
-}
-
 .heart-svg {
   background-color: transparent;
   width: 75px;
@@ -240,7 +233,7 @@ p[class^="from-"].emoji::before {
   margin-bottom: -20px;
   height: auto !important;
   position: relative !important;
-  max-width: 260px !important;
+  max-width: 250px !important;
 }
 
 .second-img {
@@ -248,7 +241,7 @@ p[class^="from-"].emoji::before {
   z-index: 2;
   height: auto !important;
   position: relative !important;
-  max-width: 260px !important;
+  max-width: 250px !important;
 }
 
 .third-img {
