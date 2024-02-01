@@ -14,7 +14,7 @@ const Reveal = ({ children }: Props) => {
 
   console.log(intersecting);
 
-  const threshold = 0.5;
+  const threshold = 1;
   const duration = "50";
   const x = 0;
   const y = 0;
@@ -45,7 +45,7 @@ const Reveal = ({ children }: Props) => {
         }
       };
     }
-  }, [intersecting]);
+  }, [clean]);
 
   return (
     <div
@@ -57,7 +57,7 @@ const Reveal = ({ children }: Props) => {
           //   : "translate(0px, 0px)",
         }
       }
-      className={`${intersecting ? "opacity-100 transition" : "opacity-10"} `}
+      className={`${intersecting ? "opacity-100 " : "opacity-10"} `}
       //   add classname with transition property in it above ^
       ref={ref}
     >
