@@ -7,16 +7,18 @@ const Home = () => {
   return (
     <main className='flex min-h-screen flex-col items-center section-ctn font-sans'>
       <div className='flex-col flex justify-center items-center'>
-        <section className='py-3 w-11/12 section max-w-lg w-11/12 flex flex-col justify-start first-section'>
+        <section className=' w-11/12 section max-w-lg w-11/12 flex flex-col justify-start first-section'>
           <NavCounter></NavCounter>
           <div className='h-full flex justify-center items-center'>
-            <p className='text-xl'>
-              In keeping with theme of packing light, here's your valentiens
-              card - OR - a collection of love made by us.
-            </p>
+            <Reveal>
+              <p className='text-xl'>
+                In keeping with theme of packing light, here's your valentiens
+                card - OR - a collection of love made by us.
+              </p>
+            </Reveal>
           </div>
         </section>
-        <section className='py-3 w-full section max-w-lg w-11/12 flex-col justify-start'>
+        <section className=' w-full section max-w-lg w-11/12 flex-col justify-start'>
           <h2 className='text-left'>our tunes</h2>
           <iframe
             title='Spotify Playlist'
@@ -28,14 +30,14 @@ const Home = () => {
           ></iframe>
         </section>
         <Reveal>
-          <section className='py-3 section max-w-lg w-11/12'>
+          <section className=' section max-w-lg w-11/12'>
             <h2 className='text-xls'>
               to be honest, we've already said it best
             </h2>
           </section>
         </Reveal>
         <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12'>
+          <section className=' w-full section max-w-lg w-11/12'>
             <div className='imessage'>
               <p className='from-them'>
                 don't tempt me, I'll take up all your free time
@@ -45,17 +47,17 @@ const Home = () => {
           </section>
         </Reveal>
         <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12'>
+          <section className=' w-full section max-w-lg w-11/12'>
             <p className='text-center'>''You broke your fucking promise''</p>
           </section>
         </Reveal>
         <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12'>
+          <section className=' w-full section max-w-lg w-11/12'>
             <p className='text-center'>I feel like we were inevitable</p>
           </section>
         </Reveal>
         <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12'>
+          <section className=' w-full section max-w-lg w-11/12'>
             <div className='imessage'>
               <p className='from-them'>
                 you're the only person I could imagine doing this with
@@ -63,7 +65,7 @@ const Home = () => {
             </div>
           </section>
         </Reveal>
-        <section className='py-3 w-full section max-w-lg w-11/12'>
+        <section className=' w-full section max-w-lg w-11/12'>
           <div className='py-3 flex flex-col max-w-lg w-11/12 relative items-center content-center justify-center'>
             <Image
               className='third-img rounded-lg'
@@ -76,7 +78,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className='py-3 w-full section max-w-lg w-11/12'>
+        <section className=' w-full section max-w-lg w-11/12'>
           <div className='py-3 flex flex-col max-w-lg w-11/12 relative'>
             <Image
               className='w-2/3 first-img rounded-lg'
@@ -98,7 +100,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className='py-3 w-full section max-w-lg w-11/12'>
+        <section className=' w-full section max-w-lg w-11/12'>
           <div className='py-3 flex flex-col max-w-lg w-11/12 relative items-center content-center justify-center'>
             <Image
               className='fourth-img rounded-lg'

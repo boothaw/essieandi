@@ -49,13 +49,7 @@ const Reveal = ({ children }: Props) => {
 
   return (
     <div
-      style={{
-        transitionDuration: duration,
-        transform: !intersecting
-          ? `translate(${x}px, ${y}px)`
-          : "translate(0px, 0px)",
-      }}
-      className={`transition ${intersecting ? "opacity-100" : "opacity-10"}`}
+      className={`${intersecting ? "opacity-100 transition" : "opacity-10"} `}
       //   add classname with transition property in it above ^
       ref={ref}
     >

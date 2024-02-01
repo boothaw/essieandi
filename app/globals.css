@@ -253,3 +253,17 @@ p[class^="from-"].emoji::before {
   height: auto !important;
   position: relative !important;
 }
+
+.transition {
+  opacity: 1 !important;
+  animation: fade-in 0.1s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
