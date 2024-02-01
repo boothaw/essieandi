@@ -5,21 +5,35 @@ import HeartIcon from "./components/heart";
 
 const Home = () => {
   return (
-    <main className='flex min-h-screen flex-col items-center section-ctn font-sans'>
+    <main className='flex min-h-screen flex-col items-center section-ctn'>
       <div className='flex-col flex justify-center items-center'>
         <section className=' w-11/12 section max-w-lg w-11/12 flex flex-col justify-start first-section'>
           <NavCounter></NavCounter>
           <div className='h-full flex justify-center items-center'>
             <Reveal>
-              <p className='text-xl'>
-                In keeping with theme of packing light, here's your valentiens
-                card - OR - a collection of love made by us.
+              <p className='mb-1 font-bold text-3xl'>
+                <span>to: </span>essie
+              </p>
+              <p className='font-bold text-3xl mb-6'>
+                <span>from:</span> wilkes
+              </p>
+              <p className='font-xs'>(scroll down, but not too hard)</p>
+            </Reveal>
+          </div>
+        </section>
+        <section className=' w-11/12 section max-w-lg w-11/12 flex flex-col justify-start first-section'>
+          <div className='h-full flex justify-center items-center'>
+            <Reveal>
+              <p className='font-bold text-xl'>
+                Physical items are annoying when you have to carry them around.
+                Here's a collection of us that weighs nothing and will be around
+                for as long as we are.
               </p>
             </Reveal>
           </div>
         </section>
         <section className=' w-full section max-w-lg w-11/12 flex-col justify-start'>
-          <h2 className='text-left'>our tunes</h2>
+          <h2 className='text-left font-bold text-3xl'>songs we've played</h2>
           <iframe
             title='Spotify Playlist'
             src='https://open.spotify.com/embed/playlist/3RNRShwfeZo5pqKgIq9iGA?utm_source=generator'
@@ -31,8 +45,8 @@ const Home = () => {
         </section>
         <Reveal>
           <section className=' section max-w-lg w-11/12'>
-            <h2 className='text-xls'>
-              to be honest, we've already said it best
+            <h2 className='text-left font-bold text-3xl'>
+              to be honest, we've already said it best.
             </h2>
           </section>
         </Reveal>
@@ -63,6 +77,14 @@ const Home = () => {
                 you're the only person I could imagine doing this with
               </p>
             </div>
+          </section>
+        </Reveal>
+        <Reveal>
+          <section className=' section max-w-lg w-11/12'>
+            <h2 className='text-left font-bold text-3xl'>
+              we don't have albums together (yet), but what the pictures we have
+              together can't be beat
+            </h2>
           </section>
         </Reveal>
         <section className=' w-full section max-w-lg w-11/12'>
