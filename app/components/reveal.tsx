@@ -14,7 +14,7 @@ const Reveal = ({ children }: Props) => {
 
   console.log(intersecting);
 
-  const threshold = 0.25;
+  const threshold = 0.5;
   const duration = "50";
   const x = 0;
   const y = 0;

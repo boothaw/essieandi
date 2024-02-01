@@ -256,7 +256,7 @@ p[class^="from-"].emoji::before {
 
 .transition {
   opacity: 1 !important;
-  animation: fade-in 0.1s ease-in;
+  animation: fade-in 1s ease-in;
 }
 
 @keyframes fade-in {
