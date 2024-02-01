@@ -16,19 +16,17 @@ const Home = () => {
             </p>
           </div>
         </section>
-        <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12 flex-col justify-start'>
-            <h2 className='text-left'>our tunes</h2>
-            <iframe
-              title='Spotify Playlist'
-              src='https://open.spotify.com/embed/playlist/3RNRShwfeZo5pqKgIq9iGA?utm_source=generator'
-              width='90%'
-              height='400px'
-              allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-              loading='lazy'
-            ></iframe>
-          </section>
-        </Reveal>
+        <section className='py-3 w-full section max-w-lg w-11/12 flex-col justify-start'>
+          <h2 className='text-left'>our tunes</h2>
+          <iframe
+            title='Spotify Playlist'
+            src='https://open.spotify.com/embed/playlist/3RNRShwfeZo5pqKgIq9iGA?utm_source=generator'
+            width='90%'
+            height='400px'
+            allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+            loading='lazy'
+          ></iframe>
+        </section>
         <Reveal>
           <section className='py-3 section max-w-lg w-11/12'>
             <h2 className='text-xls'>
