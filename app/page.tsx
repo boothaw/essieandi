@@ -24,7 +24,7 @@ const Home = () => {
         <section className=' w-11/12 section max-w-lg w-11/12 flex flex-col justify-start first-section'>
           <div className='h-full flex justify-center items-center'>
             <Reveal>
-              <p className='font-bold text-xl'>
+              <p className='font-bold text-xl mb-6'>
                 Physical items are annoying when you have to carry them around.
                 Here's a collection of us that weighs nothing and will be around
                 for as long as we are.
