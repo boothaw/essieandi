@@ -16,56 +16,6 @@ const Home = () => {
             </p>
           </div>
         </section>
-        <section className='py-3 w-full section max-w-lg w-11/12'>
-          <div className='py-3 flex flex-col max-w-lg w-11/12 relative items-center content-center justify-center'>
-            <Image
-              className='third-img rounded-lg'
-              src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/lwriysdpis4qdb12hhvq'
-              alt='Snowstorm Ocean'
-              fill={true}
-            />
-            <div className='absolute top-1.5 -right-0.5 rotate-12'>
-              <HeartIcon></HeartIcon>
-            </div>
-          </div>
-        </section>
-        <section className='py-3 w-full section max-w-lg w-11/12'>
-          <div className='py-3 flex flex-col max-w-lg w-11/12 relative'>
-            <Image
-              className='w-2/3 first-img rounded-lg'
-              src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/smebzxk02xl8wz9zrxzw'
-              alt='NES snow'
-              fill={true}
-            />
-            <div className='absolute -right-0 top-1/4 rotate-12'>
-              <HeartIcon></HeartIcon>
-            </div>{" "}
-            <Image
-              className='w-2/3 self-end second-img rounded-lg'
-              src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/pewrtmau8cu8ucrrna3j'
-              alt='Red Essie'
-              fill={true}
-            />
-            <div className='absolute -left-0 bottom-1/4 -rotate-12'>
-              <HeartIcon></HeartIcon>
-            </div>
-          </div>
-        </section>
-        <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12'>
-            <div className='py-3 flex flex-col max-w-lg w-11/12 relative items-center content-center justify-center'>
-              <Image
-                className='fourth-img rounded-lg'
-                src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/cuw1bzqr8v6jz1cdyei4'
-                alt='Polaroid'
-                fill={true}
-              />
-              <div className='absolute top-3 -right-0.5 rotate-12'>
-                <HeartIcon></HeartIcon>
-              </div>
-            </div>
-          </section>
-        </Reveal>
         <section className='py-3 w-full section max-w-lg w-11/12 flex-col justify-start'>
           <h2 className='text-left'>our tunes</h2>
           <iframe
@@ -116,6 +66,54 @@ const Home = () => {
         <Reveal>
           <section className='py-3 w-full section max-w-lg w-11/12'></section>
         </Reveal>
+        <section className='py-3 w-full section max-w-lg w-11/12'>
+          <div className='py-3 flex flex-col max-w-lg w-11/12 relative items-center content-center justify-center'>
+            <Image
+              className='third-img rounded-lg'
+              src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/lwriysdpis4qdb12hhvq'
+              alt='Snowstorm Ocean'
+              fill={true}
+            />
+            <div className='absolute top-1.5 -right-0.5 rotate-12'>
+              <HeartIcon></HeartIcon>
+            </div>
+          </div>
+        </section>
+        <section className='py-3 w-full section max-w-lg w-11/12'>
+          <div className='py-3 flex flex-col max-w-lg w-11/12 relative'>
+            <Image
+              className='w-2/3 first-img rounded-lg'
+              src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/smebzxk02xl8wz9zrxzw'
+              alt='NES snow'
+              fill={true}
+            />
+            <div className='absolute -right-0 top-1/4 rotate-12'>
+              <HeartIcon></HeartIcon>
+            </div>{" "}
+            <Image
+              className='w-2/3 self-end second-img rounded-lg'
+              src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/pewrtmau8cu8ucrrna3j'
+              alt='Red Essie'
+              fill={true}
+            />
+            <div className='absolute -left-0 bottom-1/4 -rotate-12'>
+              <HeartIcon></HeartIcon>
+            </div>
+          </div>
+        </section>
+        <section className='py-3 w-full section max-w-lg w-11/12'>
+          <div className='py-3 flex flex-col max-w-lg w-11/12 relative items-center content-center justify-center'>
+            <Image
+              className='fourth-img rounded-lg'
+              src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/cuw1bzqr8v6jz1cdyei4'
+              alt='Polaroid'
+              fill={true}
+            />
+            <div className='absolute top-3 -right-0.5 rotate-12'>
+              <HeartIcon></HeartIcon>
+            </div>
+          </div>
+        </section>
         <Reveal>
           <section className='py-3 w-full section max-w-lg w-11/12'>
             <div className='w-28 h-64 bg-red-600'></div>
