@@ -1,7 +1,6 @@
 "use client";
 
 import { ReactNode } from "react";
-import { LayoutProps } from "@/.next/types/app/layout";
 import React, { useEffect, useRef, useState } from "react";
 
 interface Props {
