@@ -18,7 +18,7 @@ const Home = () => {
             </Reveal>
           </div>
         </section>
-        {/* <section className=' w-full section max-w-lg w-11/12 flex-col justify-start'>
+        <section className=' w-full section max-w-lg w-11/12 flex-col justify-start'>
           <h2 className='text-left'>our tunes</h2>
           <iframe
             title='Spotify Playlist'
@@ -28,7 +28,7 @@ const Home = () => {
             allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
             loading='lazy'
           ></iframe>
-        </section> */}
+        </section>
         <Reveal>
           <section className=' section max-w-lg w-11/12'>
             <h2 className='text-xls'>
