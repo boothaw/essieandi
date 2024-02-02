@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Reveal from "./components/reveal";
 import NavCounter from "./components/nav";
 import HeartIcon from "./components/heart";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -10,7 +13,11 @@ const Home = () => {
         <section className=' w-11/12 section max-w-lg w-11/12 flex flex-col justify-start first-section'>
           <NavCounter></NavCounter>
           <div className='h-full flex justify-center items-center'>
-            <Reveal>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ type: "spring" }}
+            >
               <p className='mb-1 font-bold text-3xl'>
                 <span>to: </span>essie
               </p>
@@ -18,18 +25,22 @@ const Home = () => {
                 <span>from:</span> wilkes
               </p>
               <p className='font-xs'>(scroll down, but not too hard)</p>
-            </Reveal>
+            </motion.div>
           </div>
         </section>
         <section className=' w-11/12 section max-w-lg w-11/12 flex flex-col justify-start first-section'>
           <div className='h-full flex justify-center items-center'>
-            <Reveal>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ type: "spring" }}
+            >
               <p className='font-bold text-xl mb-6'>
                 Physical items are annoying when you have to carry them around.
                 Here's a short collection of us things that weighs nothing and
                 will be around for as long as we are.
               </p>
-            </Reveal>
+            </motion.div>
           </div>
         </section>
         <section className=' w-full section max-w-lg flex-col justify-start'>
@@ -49,20 +60,31 @@ const Home = () => {
           </h2>
         </section>
         <section className=' w-full section max-w-lg w-11/12'>
-          <div className='imessage'>
-            <p className='from-them'>
-              don't tempt me, I'll take up all your free time
-            </p>
-            <p className='from-me'>I double dog dare ya</p>
-          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: "spring" }}
+          >
+            <div className='imessage'>
+              <p className='from-them'>
+                don't tempt me, I'll take up all your free time
+              </p>
+              <p className='from-me'>I double dog dare ya</p>
+            </div>
+          </motion.div>
         </section>
-        <Reveal>
-          <section className=' w-full section max-w-lg w-11/12'>
+        <section className=' w-full section max-w-lg w-11/12'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: "spring" }}
+          >
+            {" "}
             <p className='text-center font-bold text-xl'>
               ''You broke your fucking promise''
             </p>
-          </section>
-        </Reveal>
+          </motion.div>
+        </section>
         <section className=' w-full section max-w-lg w-11/12'>
           <svg
             className='w-50 flex'
@@ -73,19 +95,29 @@ const Home = () => {
           </svg>
         </section>
         <section className=' bg-black w-full section max-w-lg w-11/12 '>
-          <p className='text-center font-bold text-xl text-white notes'>
-            I feel like we were inevitable
-          </p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: "spring" }}
+          >
+            <p className='text-center font-bold text-xl text-white notes'>
+              I feel like we were inevitable
+            </p>
+          </motion.div>
         </section>
-        <Reveal>
-          <section className=' w-full section max-w-lg w-11/12'>
+        <section className=' w-full section max-w-lg w-11/12'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: "spring" }}
+          >
             <div className='imessage'>
               <p className='from-them'>
                 you're the only person I could imagine doing this with
               </p>
             </div>
-          </section>
-        </Reveal>
+          </motion.div>
+        </section>
         <Reveal>
           <section className=' section max-w-lg w-11/12'>
             <h2 className='text-left font-bold text-3xl'>
