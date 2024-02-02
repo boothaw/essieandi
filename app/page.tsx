@@ -64,7 +64,6 @@ const Home = () => {
           </section>
         </Reveal>
         <section className=' w-full section max-w-lg w-11/12'>
-          oooo
           <svg
             className='w-50 flex'
             xmlns='http://www.w3.org/2000/svg'
