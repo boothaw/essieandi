@@ -26,13 +26,13 @@ const Home = () => {
             <Reveal>
               <p className='font-bold text-xl mb-6'>
                 Physical items are annoying when you have to carry them around.
-                Here's a collection of us that weighs nothing and will be around
-                for as long as we are.
+                Here's a collection of us things that weighs nothing and will be
+                around for as long as we are.
               </p>
             </Reveal>
           </div>
         </section>
-        <section className=' w-full section max-w-lg w-11/12 flex-col justify-start'>
+        <section className=' w-full section max-w-lg flex-col justify-start'>
           <h2 className='text-left font-bold text-3xl'>songs we've played</h2>
           <iframe
             title='Spotify Playlist'
@@ -43,33 +43,31 @@ const Home = () => {
             loading='lazy'
           ></iframe>
         </section>
-        <Reveal>
-          <section className=' section max-w-lg w-11/12'>
-            <h2 className='text-left font-bold text-3xl'>
-              to be honest, we've already said it best.
-            </h2>
-          </section>
-        </Reveal>
-        <Reveal>
-          <section className=' w-full section max-w-lg w-11/12'>
-            <div className='imessage'>
-              <p className='from-them'>
-                don't tempt me, I'll take up all your free time
-              </p>
-              <p className='from-me'>I double dog dare ya</p>
-            </div>
-          </section>
-        </Reveal>
+        <section className=' section max-w-lg w-11/12 flex flex-col'>
+          <h2 className='text-left font-bold text-3xl w-full'>
+            some words we've said, written and whispered
+          </h2>
+        </section>
+        <section className=' w-full section max-w-lg w-11/12'>
+          <div className='imessage'>
+            <p className='from-them'>
+              don't tempt me, I'll take up all your free time
+            </p>
+            <p className='from-me'>I double dog dare ya</p>
+          </div>
+        </section>
         <Reveal>
           <section className=' w-full section max-w-lg w-11/12'>
-            <p className='text-center'>''You broke your fucking promise''</p>
+            <p className='text-center font-bold text-xl'>
+              ''You broke your fucking promise''
+            </p>
           </section>
         </Reveal>
-        <Reveal>
-          <section className=' w-full section max-w-lg w-11/12'>
-            <p className='text-center'>I feel like we were inevitable</p>
-          </section>
-        </Reveal>
+        <section className=' bg-black w-full section max-w-lg w-11/12 '>
+          <p className='text-center font-bold text-xl text-white notes'>
+            I feel like we were inevitable
+          </p>
+        </section>
         <Reveal>
           <section className=' w-full section max-w-lg w-11/12'>
             <div className='imessage'>
@@ -82,8 +80,8 @@ const Home = () => {
         <Reveal>
           <section className=' section max-w-lg w-11/12'>
             <h2 className='text-left font-bold text-3xl'>
-              we don't have albums together (yet), but what the pictures we have
-              together can't be beat
+              we've don't have photo albums yet, but these few pictures of us
+              can't be beat
             </h2>
           </section>
         </Reveal>
@@ -135,11 +133,29 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <Reveal>
-          <section className='py-3 w-full section max-w-lg w-11/12'>
-            <div className='w-28 h-64 bg-red-600'></div>
-          </section>
-        </Reveal>
+        <section className=' w-11/12 section max-w-lg w-11/12 flex flex-col justify-start first-section'>
+          <div className='h-full flex justify-center items-center flex-col w-full relative'>
+            <div className='absolute -right-0 top-1/4 rotate-12'>
+              <HeartIcon></HeartIcon>
+            </div>
+            <div className='absolute -left-0 top-1/4 -rotate-12'>
+              <HeartIcon></HeartIcon>
+            </div>
+            <Reveal>
+              <p className='mb-1 font-bold text-2xl mb-6 w-full text-center'>
+                <span>Happy Valentine's Day</span>
+              </p>
+              <p className='text-right font-bold text-xl'>I Love You,</p>
+              <p className='text-right font-bold text-xl'>Wilkes</p>
+            </Reveal>
+            <div className='absolute -left-0 bottom-1/4 -rotate-12'>
+              <HeartIcon></HeartIcon>
+            </div>
+            <div className='absolute -right-0 bottom-1/4 rotate-12'>
+              <HeartIcon></HeartIcon>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
