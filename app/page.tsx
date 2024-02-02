@@ -56,7 +56,7 @@ const Home = () => {
         </section>
         <section className=' section max-w-lg w-11/12 flex flex-col'>
           <h2 className='text-left font-bold text-3xl w-full'>
-            some words we've said, written and whispered
+            words we've said, written and whispered
           </h2>
         </section>
         <section className=' w-full section max-w-lg w-11/12'>
@@ -121,8 +121,9 @@ const Home = () => {
         <Reveal>
           <section className=' section max-w-lg w-11/12'>
             <h2 className='text-left font-bold text-3xl'>
-              we don't have photo albums yet, but these few pictures of us can't
-              be beat
+              {/* we don't have stacks of photo albums yet, but these moments can't
+              be beat */}
+              moments captured that can't be beat
             </h2>
           </section>
         </Reveal>
