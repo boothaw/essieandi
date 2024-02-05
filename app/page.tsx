@@ -144,6 +144,8 @@ const Home = () => {
               src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/lwriysdpis4qdb12hhvq'
               alt='Snowstorm Ocean'
               fill={true}
+              placeholder='blur'
+              blurDataURL='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto:low/v1/essieandi/lwriysdpis4qdb12hhvq'
             />
             <div className='absolute top-1.5 -right-0.5 rotate-12'>
               <HeartIcon></HeartIcon>
@@ -157,6 +159,8 @@ const Home = () => {
               src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/smebzxk02xl8wz9zrxzw'
               alt='NES snow'
               fill={true}
+              placeholder='blur'
+              blurDataURL='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto:low/v1/essieandi/smebzxk02xl8wz9zrxzw'
             />
             <div className='absolute -right-0 top-1/4 rotate-12'>
               <HeartIcon></HeartIcon>
@@ -166,6 +170,8 @@ const Home = () => {
               src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/pewrtmau8cu8ucrrna3j'
               alt='Red Essie'
               fill={true}
+              placeholder='blur'
+              blurDataURL='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto:low,q_auto/v1/essieandi/pewrtmau8cu8ucrrna3j'
             />
             <div className='absolute -left-0 bottom-1/4 -rotate-12'>
               <HeartIcon></HeartIcon>
@@ -179,6 +185,8 @@ const Home = () => {
               src='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto/v1/essieandi/cuw1bzqr8v6jz1cdyei4'
               alt='Polaroid'
               fill={true}
+              placeholder='blur'
+              blurDataURL='https://res.cloudinary.com/dfpiloj6e/image/upload/f_auto,q_auto:low/v1/essieandi/cuw1bzqr8v6jz1cdyei4'
             />
             <div className='absolute top-3 -right-0.5 rotate-12'>
               <HeartIcon></HeartIcon>
