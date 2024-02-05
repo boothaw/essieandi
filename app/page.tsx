@@ -39,8 +39,8 @@ const Home = () => {
             >
               <p className='font-bold text-xl mb-6'>
                 Physical items are annoying when you have to carry them around.
-                Here's a short collection of us things that weighs nothing and
-                will be around for as long as we are.
+                Here's a collection for us that weighs nothing and will be
+                around for as long as we are.
               </p>
             </motion.div>
           </div>
@@ -60,9 +60,9 @@ const Home = () => {
           <h2 className='text-left font-bold text-3xl w-full'>
             words we've said, written and whispered
           </h2>
-          <p className='font-xs font-bold w-full text-left'>
+          {/* <p className='font-xs font-bold w-full text-left'>
             to be honest, we've already said it best
-          </p>
+          </p> */}
         </section>
         <section className=' w-full section max-w-lg w-11/12'>
           <motion.div
@@ -117,9 +117,10 @@ const Home = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ type: "spring" }}
+            className='w-full flex justify-center'
           >
             {" "}
-            <div className='flex flex-col convo'>
+            <div className='flex flex-col convo w-full'>
               <p className='text-left font-bold text-xl'>
                 ''essie, you're mine''
               </p>
