@@ -24,7 +24,9 @@ const Home = () => {
               <p className='font-bold text-3xl mb-6'>
                 <span>from:</span> wilkes
               </p>
-              <p className='font-xs'>(scroll down, but not too hard)</p>
+              <p className='font-xs font-bold'>
+                (scroll down, but not too hard)
+              </p>
             </motion.div>
           </div>
         </section>
@@ -58,6 +60,9 @@ const Home = () => {
           <h2 className='text-left font-bold text-3xl w-full'>
             words we've said, written and whispered
           </h2>
+          <p className='font-xs font-bold w-full text-left'>
+            to be honest, we've already said it best
+          </p>
         </section>
         <section className=' w-full section max-w-lg w-11/12'>
           <motion.div
@@ -86,9 +91,9 @@ const Home = () => {
           </motion.div>
         </section>
         <section className=' w-full section max-w-lg w-11/12'>
-          <div className='h-full w-full	flex justify-center items-center'>
+          <div className='h-full w-full	flex justify-center items-center svg-container'>
             <svg
-              className='w-50 flex'
+              className='w-full flex'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 1243 201'
             >
@@ -113,6 +118,21 @@ const Home = () => {
             whileInView={{ opacity: 1 }}
             transition={{ type: "spring" }}
           >
+            {" "}
+            <div className='flex flex-col convo'>
+              <p className='text-left font-bold text-xl'>
+                ''essie, you're mine''
+              </p>
+              <p className='text-right font-bold text-xl'>''forever''</p>
+            </div>
+          </motion.div>
+        </section>
+        <section className=' w-full section max-w-lg w-11/12'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: "spring" }}
+          >
             <div className='imessage'>
               <p className='from-them'>
                 you're the only person I could imagine doing this with
@@ -123,9 +143,7 @@ const Home = () => {
         <Reveal>
           <section className=' section max-w-lg w-11/12'>
             <h2 className='text-left font-bold text-3xl'>
-              {/* we don't have stacks of photo albums yet, but these moments can't
-              be beat */}
-              shared moments we've captured that can't be beat
+              shared moments we've had that can't be beat
             </h2>
           </section>
         </Reveal>
