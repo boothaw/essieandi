@@ -104,6 +104,18 @@ const Home = () => {
           >
             {" "}
             <p className='text-center font-bold text-xl'>
+              ''Uhh wow, you're perfect''
+            </p>
+          </motion.div>
+        </section>
+        <section className=' w-full section max-w-lg w-11/12'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: "spring" }}
+          >
+            {" "}
+            <p className='text-center font-bold text-xl'>
               ''You broke your fucking promise''
             </p>
           </motion.div>
