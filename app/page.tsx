@@ -163,7 +163,7 @@ const Home = () => {
         <Reveal>
           <section className=' section max-w-lg w-11/12'>
             <h2 className='text-left font-bold text-3xl'>
-              shared moments we've had that can't be beat
+              moments we've shared that can't be beat
             </h2>
           </section>
         </Reveal>
