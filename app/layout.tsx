@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "a digital expression of love",
  images: [
       {
-        url: 'iloveyouessie.com/heart.png',
+        url: 'public/heart.png',
         width: 360,
         height: 360,
       },
