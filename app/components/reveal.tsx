@@ -12,7 +12,7 @@ const Reveal = ({ children }: Props) => {
   const ref = useRef(null);
   const [intersecting, setIntersecting] = useState(false);
 
-  console.log(intersecting);
+  // console.log(intersecting);
 
   const threshold = 1;
   const duration = "50";

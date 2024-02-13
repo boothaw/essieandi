@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang='en'>
+      <meta property="og:title" content="Happy Valentine's" />
+      <meta property="og:image" content="public/heart.png" />
+
       <body className={fira.className}>{children}</body>
     </html>
   );
