@@ -8,8 +8,17 @@ const fira = Fira_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Happy Valentine's Essie",
+  openGraph: {
+      title: "Happy Valentine's Essie",
   description: "a digital expression of love",
+ images: [
+      {
+        url: 'iloveyouessie.com/heart.png',
+        width: 360,
+        height: 360,
+      },
+    ],
+  }
 };
 
 export default function RootLayout({
@@ -19,9 +28,6 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang='en'>
-      <meta property="og:title" content="Happy Valentine's" />
-      <meta property="og:image" content="public/heart.png" />
-
       <body className={fira.className}>{children}</body>
     </html>
   );
