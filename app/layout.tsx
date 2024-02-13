@@ -8,15 +8,15 @@ const fira = Fira_Sans({
 });
 
 export const metadata: Metadata = {
-  openGraph: {
-      title: "Happy Valentine's Essie",
+  title: "Happy Valentine's Essie",
   description: "a digital expression of love",
- images: [
-      {
-        url: 'https://iloveyouessie.com/heart.png',
-        width: 360,
-        height: 360,
-      },
+  openGraph: {
+  images: [
+        {
+          url: 'https://iloveyouessie.com/heart.png',
+          width: 360,
+          height: 360,
+        },
     ],
   }
 };
