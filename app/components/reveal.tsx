@@ -6,6 +6,7 @@ import React, { useEffect, useRef, useState } from "react";
 interface Props {
   children?: ReactNode;
   // any props that come into the component
+  // gify
 }
 
 const Reveal = ({ children }: Props) => {
